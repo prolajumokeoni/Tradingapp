@@ -10,10 +10,10 @@ const MobileView = () => {
   return (
     <div>
       <nav className="bg-light flex items-center w-full h-20">
-        <div className="w-11/12  m-auto flex  justify-between">
+        <div className="w-11/12  m-auto flex  justify-between items-center">
           <div className="flex justify-between space-x-4">
-            <ChatBubbleBottomCenterIcon className="h-10 w-10 text-gray" />
-            <BellIcon className="h-10 w-10 text-gray" />
+            <ChatBubbleBottomCenterIcon  className="h-6 w-6 text-gray" />
+            <BellIcon className="h-6 w-6 text-gray" />
           </div>
           <div className="">
             <Bars3CenterLeftIcon className="h-10 w-10 text-blue" />
