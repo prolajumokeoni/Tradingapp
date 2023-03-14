@@ -15,7 +15,8 @@ module.exports = {
       light: '#EEF2F8',
       dark: '#7C86A3',
       lightblue: '#282088',
-      darkblue: '#4438CA'
+      darkblue: '#4438CA',
+      highlight: '#362e95'
     }
   },
   plugins: [],
