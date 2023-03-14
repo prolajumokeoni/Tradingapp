@@ -8,7 +8,7 @@ import Card from "./Card";
 
 const MobileView = () => {
   return (
-    <div>
+    <div className={`${window.innerWidth <= 768 ? 'hidden md:block' : 'md:hidden'}`}>
       <nav className="bg-light flex items-center w-full h-20">
         <div className="w-11/12  m-auto flex  justify-between items-center">
           <div className="flex justify-between space-x-4">
@@ -16,7 +16,7 @@ const MobileView = () => {
             <BellIcon className="h-6 w-6 text-gray" />
           </div>
           <div className="">
-            <Bars3CenterLeftIcon className="h-10 w-10 text-blue" />
+            <Bars3CenterLeftIcon className="h-10 w-10 text-barblue" />
           </div>
         </div>
       </nav>

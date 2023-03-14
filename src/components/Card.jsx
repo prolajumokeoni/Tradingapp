@@ -2,6 +2,7 @@ import { CalendarDaysIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
 const Card = () => {
+	
   const users = [
     {
       profileImage: "https://api.multiavatar.com/Binx Bond.png",

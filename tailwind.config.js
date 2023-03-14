@@ -4,25 +4,18 @@ module.exports = {
   theme: {
     screens: {
       'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
       'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
       'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
       'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
+      '2xl': '1536px', 
     },
     colors: {
-      blue: '#566BF6',
+      barblue: '#566BF6',
       gray: '#535C83',
       light: '#EEF2F8',
       dark: '#7C86A3',
+      lightblue: '#282088',
+      darkblue: '#4438CA'
     }
   },
   plugins: [],
