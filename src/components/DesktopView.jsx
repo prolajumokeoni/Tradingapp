@@ -17,8 +17,8 @@ const DesktopView = () => {
         window.innerWidth >= 768 ? "hidden md:block" : "md:hidden"
       }`}
     >
-      <div className="flex h-screen">
-        <aside className="sidebar w-1/5">
+      <div className="flex h-full">
+        <aside className="sidebar w-1/5 min-h-screen">
           <nav className="mt-10">
             <NavLink className="flex items-center w-10/12 mx-auto">
               <SkippaLogo className="h-8 w-8 text-gray" />
@@ -27,15 +27,15 @@ const DesktopView = () => {
               </h1>
             </NavLink>
 
-            <NavLink className="flex items-center mt-24 pl-2 hover:bg-highlight active:bg-lightblue">
+            <NavLink className="flex items-center mt-24 pl-3 hover:bg-highlight active:bg-lightblue">
               <UsersIcon className="h-6 w-6 text-dark" />
-              <p className="text-dark text-2xl p-3 break-normal font-bold">
+              <p className="text-dark   md:text-sm  xl:text-2xl  p-3 break-normal font-bold">
                 Find Mentors
               </p>
             </NavLink>
           </nav>
         </aside>
-        <main className="w-4/5">
+        <main className="w-4/5 min-h-screen">
           <nav className="bg-light">
             {" "}
             <nav className="bg-light flex items-center justify-between w-full h-20">
@@ -62,9 +62,9 @@ const DesktopView = () => {
           </nav>
           <section>
             <div className="py-4 text-center w-full">
-              <MagnifyingGlassIcon className="h-6 w-6 text-dark absolute mt-3 ml-24" />
+              <MagnifyingGlassIcon className="h-6 w-6 text-dark absolute mt-3 md:ml-12 lg:ml-20" />
               <input
-                className="border border-light w-11/12 m-auto rounded-lg  placeholder:text-dark text-left px-14 p-3"
+                className="border border-light w-11/12 m-auto rounded-lg  placeholder:text-dark text-left px-14 p-3 lg:px-20"
                 placeholder="Find Mentors"
               />
             </div>

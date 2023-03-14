@@ -57,6 +57,33 @@ const Card = () => {
       location: "Boulder Colorado",
       experience: "5 Years Trading",
     },
+    {
+      profileImage: "https://api.multiavatar.com/Binx Bond.png",
+      backgroundImage:
+        "https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg",
+      name: "James",
+      username: "james_mentor",
+      location: "Boulder Colorado",
+      experience: "5 Years Trading",
+    },
+    {
+      profileImage: "https://api.multiavatar.com/Binx Bond.png",
+      backgroundImage:
+        "https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg",
+      name: "James",
+      username: "james_mentor",
+      location: "Boulder Colorado",
+      experience: "5 Years Trading",
+    },
+    {
+      profileImage: "https://api.multiavatar.com/Binx Bond.png",
+      backgroundImage:
+        "https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg",
+      name: "James",
+      username: "james_mentor",
+      location: "Boulder Colorado",
+      experience: "5 Years Trading",
+    },
   ];
   return (
     <div className="flex items-center justify-between w-11/12 mx-auto">
