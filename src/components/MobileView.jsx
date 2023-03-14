@@ -10,7 +10,7 @@ const MobileView = () => {
   return (
     <div
       className={`${
-        window.innerWidth <= 767 ? "hidden md:block" : "md:hidden"
+        window.innerWidth <= 767 ? "hidden sm:block" : "sm:hidden"
       }`}
     >
       <nav className="bg-light flex items-center w-full h-20">

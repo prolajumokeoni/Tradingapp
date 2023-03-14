@@ -1,5 +1,6 @@
 import { CalendarDaysIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Card = () => {
   const users = [
@@ -110,11 +111,14 @@ const Card = () => {
               className="relative grid mx-2 my-8 bg-white shadow-2xl"
             > 
                 {hoveredCard === idx ? (
-                  <div className="h-48  mx-auto bg-gray w-full"> 
-                  <div className=" text-light p-2 text-center">
+                  <div className="h-48  mx-auto bg-gray w-full flex flex-col "> 
+                  <div className="text-dark font-bold p-2 text-center">
                   <h2>{user.username}</h2>
                   <p>{user.about}</p>
                   </div>
+                  <NavLink path="/" className="text-light pt-4 font-bold text-center">
+                  Go to Mentors page 
+                  </NavLink> 
                   </div>
                 ) : (
                   <div>

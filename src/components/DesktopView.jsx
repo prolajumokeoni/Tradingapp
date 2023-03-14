@@ -30,7 +30,7 @@ const DesktopView = () => {
             <NavLink className="flex items-center mt-24 pl-3 hover:bg-highlight active:bg-lightblue">
               <UsersIcon className="h-6 w-6 text-dark" />
               <p className="text-dark   md:text-sm  xl:text-2xl  p-3 break-normal font-bold">
-                Find Mentors
+                Find Traders
               </p>
             </NavLink>
           </nav>
@@ -68,7 +68,7 @@ const DesktopView = () => {
                 placeholder="Find Mentors"
               />
             </div>
-            <Card />
+            <Card  />
           </section>
         </main>
       </div>
