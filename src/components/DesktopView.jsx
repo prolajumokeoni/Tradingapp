@@ -62,9 +62,9 @@ const DesktopView = () => {
           </nav>
           <section>
             <div className="py-4 text-center w-full">
-              <MagnifyingGlassIcon className="h-6 w-6 text-dark absolute mt-3 md:ml-12 lg:ml-20" />
+              <MagnifyingGlassIcon className="h-6 w-6 text-dark absolute mt-3 md:ml-12 lg:ml-28" />
               <input
-                className="border border-light w-11/12 m-auto rounded-lg  placeholder:text-dark text-left px-14 p-3 lg:px-20"
+                className="border border-light w-11/12 m-auto rounded-lg  placeholder:text-dark text-left px-14 p-3 lg:px-24"
                 placeholder="Find Mentors"
               />
             </div>
