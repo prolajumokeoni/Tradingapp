@@ -8,10 +8,10 @@ import {
 } from "@heroicons/react/24/solid";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as SkippaLogo } from "../assets/skippa.svg";
-import Card from "./Card";
+import CardList from "./CardList";
 import "./Navigation.styles.css";
 
-const Navigation = () => {
+const Navigation = ({users }) => {
   return (
     <div>
       <div className="flex h-full">
@@ -81,7 +81,7 @@ const Navigation = () => {
                 placeholder="Find Mentors"
               />
             </div>
-            <Card />
+            <CardList />
           </section>
         </main>
       </div>
