@@ -121,7 +121,7 @@ const CardList = () => {
   ];
   return (
     <div className="flex items-center justify-between w-11/12 mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 w-full mx-auto">
         {users.map((user) => (
           <Card user={user} key={user.id} />
         ))}

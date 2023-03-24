@@ -25,6 +25,8 @@ const Card = ({
       }`}
       onMouseEnter={() => setFlip(!flip)}
       onMouseLeave={() => setFlip(null)}
+      onTouchStart={() => setFlip(!flip)}
+      onTouchEnd={() => setFlip(null)}
     >
       <div className="front w-full">
         <img src={backgroundImage} className="h-28 w-full" alt={`${name}`} />

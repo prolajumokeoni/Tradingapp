@@ -11,7 +11,7 @@ import { ReactComponent as SkippaLogo } from "../assets/skippa.svg";
 import CardList from "./CardList";
 import "./Navigation.styles.css";
 
-const Navigation = ({users }) => {
+const Navigation = () => {
   return (
     <div>
       <div className="flex h-full">
