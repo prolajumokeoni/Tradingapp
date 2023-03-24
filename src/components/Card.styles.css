@@ -1,7 +1,7 @@
 .card {
   transform: rotateY(var(--rotate-y, 0));
   transform-style: preserve-3d;
-  transition: 550ms;
+  transition: 1500ms;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0));
 }
 
