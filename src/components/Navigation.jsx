@@ -51,7 +51,7 @@ const Navigation = () => {
                 <NavLink className="">
                   <ChevronLeftIcon className="h-6 w-6 text-gray" />
                 </NavLink>
-                <div className="flex items-center justify-between space-x-12">
+                <div className="flex items-center justify-between space-x-4">
                   <ChatBubbleBottomCenterIcon className="h-6 w-6 text-gray" />
                   <NavLink></NavLink>
                   <NavLink>
