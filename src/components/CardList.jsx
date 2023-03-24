@@ -1,4 +1,6 @@
 import Card from "./Card";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import { useState } from "react";
 
 const CardList = () => {
   const users = [
@@ -119,12 +121,41 @@ const CardList = () => {
         "Lorem ipsum dolor sit amet, consecrate disciplining elit. Duis vel orci mi. Quisque a ante viverra, mollis magna eu, dapibus nunc. ",
     },
   ];
+
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredData = users.filter((user) =>
+    user.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const handleSearchInputChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
   return (
-    <div className="flex items-center justify-between w-11/12 mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 w-full mx-auto">
-        {users.map((user) => (
-          <Card user={user} key={user.id} />
-        ))}
+    <div>
+      <div className="relative mt-4 mx-auto w-11/12">
+        <span className="absolute inset-y-0 left-0 flex items-center pl-3">
+          <MagnifyingGlassIcon className="h-5 w-5 text-dark" />
+        </span>
+        <input
+          type="search"
+          name="q"
+          className="w-full  py-3 text-sm  placholder:text-dark rounded-md px-10 focus:outline-light focus:text-dark"
+          placeholder="Find Mentors"
+          autoComplete="off"
+          onChange={handleSearchInputChange}
+        />
+      </div>
+      <div className="flex items-center justify-between w-11/12 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 w-full mx-auto">
+          {filteredData.length > 0 ? (
+            filteredData.map((user) => <Card user={user} key={user.id} />)
+          ) : (
+            <h2 className="text-center text-dark mt-6  font-extrabold ">
+              Name not found
+            </h2>
+          )}
+        </div>
       </div>
     </div>
   );

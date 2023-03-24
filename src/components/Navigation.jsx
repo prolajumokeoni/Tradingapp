@@ -1,5 +1,4 @@
 import {
-  MagnifyingGlassIcon,
   UsersIcon,
   BellIcon,
   ChatBubbleBottomCenterIcon,
@@ -70,7 +69,7 @@ const Navigation = () => {
           </nav>
 
           <section>
-            <div className="relative mt-4 mx-auto w-11/12">
+            {/* <div className="relative mt-4 mx-auto w-11/12">
               <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                 <MagnifyingGlassIcon className="h-5 w-5 text-dark" />
               </span>
@@ -80,7 +79,7 @@ const Navigation = () => {
                 className="w-full  py-3 text-sm placholder:text-dark rounded-md pl-10 focus:outline-light focus:text-dark"
                 placeholder="Find Mentors"
               />
-            </div>
+            </div> */}
             <CardList />
           </section>
         </main>
